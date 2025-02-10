@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data and model outputs (if not needed in version control)
+data/*
+!data/sample_current_quiz.json
+!data/sample_historical_quiz.json
+models/*
+!models/train_model.py
