@@ -48,6 +48,8 @@ This project provides personalized recommendations based on student quiz perform
  python app.py
 
 
+
+
  API Endpoints
 📌 Analyze Performance:  
 
@@ -73,6 +75,11 @@ _Displays student performance trends with graphs._
 3️⃣ Recommendations – Generates personalized study plans based on mistakes.  
 4️⃣ Rank Prediction – Uses a probabilistic model to estimate NEET rank.  
 5️⃣ Visualization – Displays trends via dynamic charts on the HTML dashboard.  
+
+
+ 📊 Sample Visualizations
+
+   1️⃣ Included in the screenshots folder
 
  Requirements
 📌 Install dependencies from `requirements.txt`:
