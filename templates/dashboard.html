@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        h2 { color: #333; }
+        img { width: 60%; margin: 20px auto; display: block; border: 1px solid #ddd; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body>
+    <h2>Student Performance Dashboard</h2>
+    
+    <h3>Accuracy Trend Over Time</h3>
+    <img src="{{ accuracy_trend }}" alt="Accuracy Trend Graph">
+
+    <h3>Mistakes Per Question</h3>
+    <img src="{{ mistakes_per_topic }}" alt="Mistakes Per Topic Graph">
+
+</body>
+</html>

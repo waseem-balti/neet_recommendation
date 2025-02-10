@@ -1,0 +1,93 @@
+# NEET Personalized Recommendation System
+
+ Overview
+This project provides personalized recommendations based on student quiz performance for NEET exam preparation. It analyzes quiz data, identifies weak areas, predicts estimated NEET rank, and displays performance visualizations on an interactive dashboard.
+
+ Features
+✅ Weak Topic Analysis – Identifies subjects where students struggle the most.  
+✅ Personalized Recommendations – Provides targeted study advice based on mistakes.  
+✅ NEET Rank Prediction – Uses a probabilistic model to estimate rank.  
+✅ Performance Visualization Dashboard – Interactive HTML-based dashboard to track progress.  
+
+ Project Structure
+
+├── src/
+│   ├── data_loader.py     # Load & preprocess quiz data
+│   ├── analysis.py        # Identify weak topics, trends, and accuracy
+│   ├── recommendations.py # Generate personalized suggestions
+│   ├── rank_predictor.py  # Probabilistic model for NEET rank estimation
+│   ├── visualizer.py      # Create performance graphs
+├── templates/
+│   ├── dashboard.html     # HTML Dashboard for visualization
+├── app.py                 # Main script to run the API
+├── requirements.txt       # Dependencies
+├── README.md              # Documentation
+
+
+ Installation & Setup
+1️⃣ Clone the repository:
+
+ git clone https://github.com/waseem-balti/neet_recommendation.git
+ cd neet-recommendation
+
+
+2️⃣ Create a virtual environment (optional but recommended):
+
+ python3 -m venv venv
+ source venv/bin/activate  # For Linux/macOS
+ venv\Scripts\activate  # For Windows
+
+
+3️⃣ Install dependencies:
+
+ pip install -r requirements.txt
+
+
+4️⃣ Run the Flask API:
+
+ python app.py
+
+
+ API Endpoints
+📌 Analyze Performance:  
+
+GET /analyze?user_id=<id>
+
+_Returns performance insights and study recommendations._
+
+📌 Predict NEET Rank:  
+
+GET /predict-rank?user_id=<id>
+
+_Estimates NEET rank based on quiz performance._
+
+📌 View Interactive Dashboard:  
+
+GET /dashboard?user_id=<id>
+
+_Displays student performance trends with graphs._
+
+ Approach
+1️⃣ Data Loading – Fetches user’s quiz history and current quiz attempts.  
+2️⃣ Performance Analysis – Calculates accuracy, identifies weak topics, and tracks improvements.  
+3️⃣ Recommendations – Generates personalized study plans based on mistakes.  
+4️⃣ Rank Prediction – Uses a probabilistic model to estimate NEET rank.  
+5️⃣ Visualization – Displays trends via dynamic charts on the HTML dashboard.  
+
+ Requirements
+📌 Install dependencies from `requirements.txt`:
+
+Flask
+pandas
+numpy
+matplotlib
+
+
+ Future Improvements
+🚀 Enhance rank prediction model with ML
+🚀 Add interactive charts using JavaScript (Plotly/D3.js)
+🚀 Expand recommendations using AI-based learning patterns
+
+ Contributing
+💡 Pull requests are welcome! Feel free to suggest improvements.  
+📩 Contact: (mailto:waseem.khasman@gmail.com)
